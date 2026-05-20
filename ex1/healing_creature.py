@@ -31,6 +31,6 @@ class Bloomelle(HealCapability, Creature):
         return (f"{type(self).__name__} is a "
                 "Grass/Fairy type Creature!")
 
-    def heal():
+    def heal(self) -> str:
         return (f"{type(self).__name__} heals"
                 "itself for a large amount")
