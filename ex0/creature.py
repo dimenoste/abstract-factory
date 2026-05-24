@@ -11,7 +11,7 @@ class Creature(ABC):
         pass
 
     def describe(self) -> str:
-        return ''
+        return ""
 
 
 class Flameling(Creature):
@@ -19,11 +19,12 @@ class Flameling(Creature):
         super().__init__(name, type_creature)
 
     def attack(self) -> str:
-        return (f"{type(self).__name__} uses Ember!")
+        return f"{type(self).__name__} uses Ember!"
 
     def describe(self) -> str:
-        return (f"{type(self).__name__} is a "
-                f"{self.type_creature} type Creature!")
+        return (
+            f"{type(self).__name__} is a {self.type_creature} type Creature!"
+        )
 
 
 class Pyrodon(Creature):
@@ -31,11 +32,12 @@ class Pyrodon(Creature):
         super().__init__(name, type_creature)
 
     def attack(self) -> str:
-        return (f"{type(self).__name__} uses Flamethrower!")
+        return f"{type(self).__name__} uses Flamethrower!"
 
     def describe(self) -> str:
-        return (f"{type(self).__name__} is a "
-                f"{self.type_creature} type Creature!")
+        return (
+            f"{type(self).__name__} is a {self.type_creature} type Creature!"
+        )
 
 
 class Aquabub(Creature):
@@ -43,11 +45,12 @@ class Aquabub(Creature):
         super().__init__(name, type_creature)
 
     def attack(self) -> str:
-        return (f"{type(self).__name__} uses Water Gun!")
+        return f"{type(self).__name__} uses Water Gun!"
 
     def describe(self) -> str:
-        return (f"{type(self).__name__} is a "
-                f"{self.type_creature} type Creature!")
+        return (
+            f"{type(self).__name__} is a {self.type_creature} type Creature!"
+        )
 
 
 class Torragon(Creature):
@@ -55,8 +58,9 @@ class Torragon(Creature):
         super().__init__(name, type_creature)
 
     def attack(self) -> str:
-        return (f"{type(self).__name__} uses Hydro Pump!")
+        return f"{type(self).__name__} uses Hydro Pump!"
 
     def describe(self) -> str:
-        return (f"{type(self).__name__} is a "
-                f"{self.type_creature} type Creature!")
+        return (
+            f"{type(self).__name__} is a {self.type_creature} type Creature!"
+        )

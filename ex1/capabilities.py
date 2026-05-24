@@ -1,17 +1,22 @@
 from abc import ABC, abstractmethod
 
-class HealCapability(ABC):
 
+class HealCapability(ABC):
     @abstractmethod
     def heal(self) -> str:
-        return ''
+        return ""
+
 
 class TransformCapability(ABC):
+    def __init__(self) -> None:
+        self.transformed: bool = False
 
     @abstractmethod
     def transform(self) -> str:
-        return ''
+        self.transformed = True
+        return ""
 
     @abstractmethod
     def revert(self) -> str:
-        return ''
+        self.transformed = False
+        return ""

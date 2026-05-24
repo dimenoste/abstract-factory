@@ -1,24 +1,24 @@
-import ex0.factory as facto
+from ex0 import FlameFactory, AquaFactory, Creature
 
 
 if __name__ == "__main__":
     print("Testing Factory")
 
-    my_flame_base: facto.Creature = facto.FlameFactory().create_base()
+    my_flame_base: Creature = FlameFactory().create_base()
     print(my_flame_base.describe())
     print(my_flame_base.attack())
 
-    my_flame_evolved: facto.Creature = facto.FlameFactory().create_evolved()
+    my_flame_evolved: Creature = FlameFactory().create_evolved()
     print(my_flame_evolved.describe())
     print(my_flame_evolved.attack())
 
     print()
     print("Testing Factory")
-    my_aqua_base: facto.Creature = facto.AquaFactory().create_base()
+    my_aqua_base: Creature = AquaFactory().create_base()
     print(my_aqua_base.describe())
     print(my_aqua_base.attack())
 
-    my_aqua_evolved: facto.Creature = facto.AquaFactory().create_evolved()
+    my_aqua_evolved: Creature = AquaFactory().create_evolved()
     print(my_aqua_evolved.describe())
     print(my_aqua_evolved.attack())
 
@@ -30,4 +30,3 @@ if __name__ == "__main__":
     print(my_aqua_base.describe())
     print(my_flame_base.attack())
     print(my_aqua_base.attack())
-
