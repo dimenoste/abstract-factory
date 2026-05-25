@@ -71,7 +71,6 @@ def battle(
             CreatureFactory,
             BattleStrategy[Creature | HealCreaturelike | TransCreatureLike],
         ] = pair[1]
-        print("vs.")
         creature1: Creature = op1[0].create_base()
         creature2: Creature = op2[0].create_base()
         strategy1: BattleStrategy[
@@ -84,8 +83,8 @@ def battle(
         print(creature1.describe())
         print("vs.")
         print(creature2.describe())
-        strategy1.act(creature1)
         print("now fight!")
+        strategy1.act(creature1)
         strategy2.act(creature2)
 
 
