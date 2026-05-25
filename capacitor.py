@@ -4,6 +4,7 @@ from ex1.creature_factory import TransformCreatureFactory as trans
 
 if __name__ == "__main__":
     print("Testing Factory")
+    print("Testing Creature with healing capability")
     print("base:")
     my_sprout = healfacto().create_base()
 

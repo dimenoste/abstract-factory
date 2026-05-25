@@ -67,7 +67,7 @@ class Morphagon(TransformCapability, Creature):
     def attack(self) -> str:
         attack_type: str = "attacks normally"
         if self.transformed:
-            attack_type = "performs a boosted strike!"
+            attack_type = "unleashes a devastating morph strike!"
         return f"{type(self).__name__} {attack_type}"
 
     def describe(self) -> str:

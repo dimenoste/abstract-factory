@@ -90,25 +90,6 @@ def battle(
 
 
 if __name__ == "__main__":
-    print("Testing Factory")
-    print("base:")
-    my_sprout: HealCreaturelike = HealingCreatureFactory().create_base()
-    NormalStrategy().act(my_sprout)
-
-    my_bloom: HealCreaturelike = HealingCreatureFactory().create_evolved()
-    DefensiveStrategy().act(my_bloom)
-
-    print()
-    print()
-    print("Testing Creature with transform capability")
-    print("base:")
-    my_shiftling: Creature = TransformCreatureFactory().create_base()
-    NormalStrategy().act(my_shiftling)
-
-    print("evolved:")
-    my_morph: Creature = TransformCreatureFactory().create_evolved()
-    AggressiveStrategy().act(my_morph)
-
     opponents_basic: list[
         tuple[
             CreatureFactory,
